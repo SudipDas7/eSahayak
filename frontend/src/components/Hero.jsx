@@ -1,3 +1,5 @@
+import ashok_stambh from "../assets/ashok_stambh.png";
+
 function Chip({ children, intent = "sky" }) {
   const base = "rounded-2xl px-4 py-2 text-sm font-semibold shadow-sm";
   const map = {
@@ -14,9 +16,9 @@ export default function Hero() {
       {/* soft pattern background */}
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_left,rgba(14,165,233,0.10),transparent_45%),radial-gradient(ellipse_at_bottom_right,rgba(100,116,139,0.12),transparent_40%)]" />
 
-      <div className="mx-auto max-w-screen-xl px-10 py-10 lg:py-14 grid lg:grid-cols-2 gap-110 items-start">
+      <div className="mx-auto max-w-screen-xl px-10 py-10 lg:py-14 grid lg:grid-cols-2 gap-y-10 lg:gap-x-10 items-start">
         {/* Left Column: Title, Subtitle, Quick Actions, and Notice Board */}
-        <div className="w-[768px]">
+        <div className="lg:col-span-1">
           {/* Title + subtitle */}
           <div className="mb-6">
             <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-800">
@@ -54,26 +56,26 @@ export default function Hero() {
         </div>
 
         {/* Right Column: Leader Welcome card (generalized) */}
-        <aside className="rounded-2xl shadow-lg px-6 py-8 text-center bg-gradient-to-b from-teal-400 to-white min-h-[360px] max-w-[360px]">
+        <aside className="lg:col-span-1 rounded-2xl shadow-lg px-6 py-8 text-center bg-gradient-to-b from-teal-400 to-white min-h-[360px] max-w-full lg:max-w-[360px] mx-auto">
           {/* Leader Image Placeholder */}
           <div className="flex justify-center mt-2 mb-6">
-            <div className="w-32 h-32 rounded-full border-4 border-white shadow-md bg-slate-200 flex items-center justify-center text-slate-500 text-sm">
-              Photo
-            </div>
+            <img
+              src={ashok_stambh}
+              alt="Leader"
+              className="w-32 h-32 rounded-full border-4 border-white shadow-md object-cover"
+            />
           </div>
 
           {/* Name & Title (generic placeholders) */}
-          <h3 className="text-gray-800 font-semibold text-xl">[Leader Name]</h3>
-          <p className="text-gray-600 text-base mb-3">[Designation]</p>
+          <h3 className="text-gray-800 font-semibold text-xl">Minister</h3>
+          <p className="text-gray-600 text-base mb-3">INDIA</p>
 
           {/* Welcome Title */}
           <h4 className="text-sky-700 font-bold text-xl mb-3">Welcome</h4>
 
           {/* Description */}
           <p className="text-base leading-7 text-slate-700">
-            e-District single window portal is a Mission Mode Project with the
-            objective of making government services & schemes available to the
-            citizens through a seamless and transparent digital system.
+          eSahayak is built to make it simple for people to raise complaints about problems in their surroundings. 
           </p>
         </aside>
       </div>

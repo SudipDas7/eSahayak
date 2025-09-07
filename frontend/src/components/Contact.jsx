@@ -25,7 +25,7 @@ export default function Contact() {
             </div>
 
             <dl className="space-y-2 text-slate-700">
-              <div><dt className="font-medium inline">Email:</dt> <dd className="inline">wb.edistrict@wb.gov.in</dd></div>
+              <div><dt className="font-medium inline">Email:</dt> <dd className="inline">ind.eSahayak@ind.gov.in</dd></div>
               <div><dt className="font-medium inline">Phone:</dt> <dd className="inline">+91 9679350002 / +91 9833544429</dd></div>
             </dl>
 

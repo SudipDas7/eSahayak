@@ -1,4 +1,4 @@
-import ashokLogo from "../assets/ashok_stambh.png";
+import icon from "../assets/icon.png";
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
@@ -9,10 +9,10 @@ export default function Navbar() {
         <div className="mx-auto max-w-screen-xl px-4 py-3 lg:py-5 grid grid-cols-12 gap-4 items-center h-30">
           {/* Brand */}
           <div className="col-span-12 md:col-span-4 flex items-center gap-3">
-            <img src={ashokLogo} alt="Ashoka Stambh" className="h-24 w-25 object-contain -my-2" /> {/* LOGO placeholder */}
+            <img src={icon} alt="eSahayak" className="h-24 w-25 object-contain -my-2" /> {/* LOGO placeholder */}
             <div className="leading-tight">
-              <div className="text-sm tracking-wide opacity-90">West Bengal</div>
-              <div className="text-xl font-bold">eSahayak</div>
+          
+              <div className="text-4xl font-bold">eSahayak</div>
             </div>
           </div>
 
